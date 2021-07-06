@@ -1,0 +1,16 @@
+.footer-site {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  color: #f7ce3e;
+  text-align: center;
+  padding: 50px 50px;
+}
+
+.text-link {
+  color: inherit;
+  text-decoration: inherit;
+}

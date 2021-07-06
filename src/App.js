@@ -1,11 +1,12 @@
-import Main from './components/Main';
-import './App.css';
+import Main from "./components/Main";
+import { BrowserRouter } from "react-router-dom";
+import "./App.css";
 
 function App() {
   return (
-    <>
+    <BrowserRouter>
       <Main />
-    </>
+    </BrowserRouter>
   );
 }
 
