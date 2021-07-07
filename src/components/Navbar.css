@@ -4,19 +4,26 @@
 }
 .logoPadding {
   padding-left: 40px;
-  font-size: larger;
+  font-size: 35px;
+}
+.logoPadding span{
+  font-size: 35px;
+}
+.logoPadding span:hover {
+  font-size: 35px;
+  color: #9aee54;
 }
 
 .text-link {
   color: inherit;
   text-decoration: inherit;
-  padding-left: 30px;
-  font-size: 20px;
+  padding-left: 50px;
+  font-size: 25px;
 }
 
 .text-link:hover {
-  color: #c5c1c0;
+  color: #c7492a;
   text-decoration: inherit;
-  padding-left: 30px;
-  font-size: 20px;
+  padding-left: 50px;
+  font-size: 25px;
 }

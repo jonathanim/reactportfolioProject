@@ -5,10 +5,10 @@ import { Link } from "react-router-dom";
 
 function Footer() {
   return (
-    <Container>
+    <Container fluid className="footer-site">
       <Row>
-        <Col xs="6">
-          <h5>Links</h5>
+        <Col sm="4">
+          <h4>Links</h4>
           <ul className="list-unstyled">
             <li>
               <Link className="text-link" to="/">
@@ -22,7 +22,7 @@ function Footer() {
             </li>
             <li>
               <Link className="text-link" to="/">
-                Resume
+                Projects
               </Link>
             </li>
             <li>
@@ -32,27 +32,41 @@ function Footer() {
             </li>
           </ul>
         </Col>
-        <Col xs="6">
-          <div className="col-6 col-sm-3 text-center">
-            <a
-              role="button"
-              className="btn btn-link text-link"
-              href="tel:+1714-232-0818"
-            >
-              <i className="fa fa-phone" /> +1714-232-0818
-            </a>
-            <br />
-            <a
-              role="button"
-              className="btn btn-link"
-              href="mailto:notreal@notreal.co"
-            >
-              <i className="fa fa-envelope-o" /> ImJonathan.work@gmail.com
-            </a>
-          </div>
+        <Col sm="4">
+          <h4>Socials</h4>
+          <Link className="text-link" to="/">
+            GitHub
+          </Link>
+          <br></br>
+          <Link className="text-link" to="/">
+            LinkedIn
+          </Link>
         </Col>
+
+        <Col sm="4">
+          <h4>Info</h4>
+          <a
+            role="button"
+            className="btn btn-link"
+            href="mailto:notreal@notreal.co"
+          >
+            <i className="fa fa-envelope-o" /> ImJonathan.work@gmail.com
+          </a>
+
+          <br />
+          <a
+            role="button"
+            className="btn btn-link text-link"
+            href="tel:+1714-232-0818"
+          >
+            <i className="fa fa-phone" /> +1714-232-0818
+          </a>
+
+
+        </Col>
+
       </Row>
-    </Container>
+    </Container >
   );
 }
 
