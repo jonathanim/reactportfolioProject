@@ -9,7 +9,7 @@ function Projects() {
                 <Row>
                     <Col>
                         <div className="home-header">
-                            <h2 className="pb-5">
+                            <h2 className="">
                                 Projects
                             </h2>
 

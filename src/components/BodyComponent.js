@@ -1,15 +1,28 @@
 import React from "react";
-import { Container, Row, Col, Button } from "reactstrap";
-import "./BodyComponent.css";
-function BodyComponent() {
+import { Container, Row, Col } from "reactstrap";
+import "../index.css"
+import Typewriter from 'typewriter-effect';
+import { Link } from 'react-router-dom';
 
+
+
+function BodyComponent() {
     return (
         <Container >
             <Row>
                 <Col>
                     <div className="home-header">
-                        <h2 className="pb-5">
-                            Hi, I'm Jonathan <span style={{ fontSize: "15px" }}>👋</span>
+
+                        <h2 className="">
+                            <Typewriter
+                                options={{
+                                    strings: ['Hi', "I'm Jonathan", "Welcome to my Site"],
+                                    autoStart: true,
+                                    loop: true,
+                                    pauseFor: 2000,
+                                    deleteSpeed: 100
+                                }}
+                            />
                         </h2>
                         <h1 className="text-center">
                             Creating Brands, <br />
@@ -19,9 +32,9 @@ function BodyComponent() {
                         </h1>
                     </div>
                     <div className="text-center">
-                        <Button color="dark" block>
+                        <Link to="/contact" className="btn btn-dark p-3" block>
                             Lets Get in Touch
-                        </Button>
+                        </Link>
                     </div>
                 </Col>
             </Row>
