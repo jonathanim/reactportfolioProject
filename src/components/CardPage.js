@@ -1,13 +1,10 @@
 import React from 'react'
-import { SKILLSDATA } from './SkillsData'
 
-function CardPage({ match }) {
-    console.log(match)
-
+function CardPage() {
 
     return (
         <div>
-            <h1>{ }</h1>
+            <h1>hi</h1>
 
 
         </div>

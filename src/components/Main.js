@@ -12,10 +12,6 @@ import CardPage from "./CardPage";
 
 
 class Main extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {};
-    }
 
     render() {
 
@@ -24,11 +20,11 @@ class Main extends Component {
             <>
                 <MyNavbar />
                 <Switch>
-                    <Route exact path="/" component={BodyComponent} />
-                    <Route exact path="/services" component={Services} />
                     <Route path="/services/:cardId" component={CardPage} />
+                    <Route exact path="/services" component={Services} />
                     <Route exact path="/projects" component={Projects} />
                     <Route exact path="/contact" component={Contact} />
+                    <Route exact path="/" component={BodyComponent} />
                     <Redirect to="/home" />
                 </Switch>
                 <Footer />

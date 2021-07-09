@@ -17,8 +17,8 @@ function Services() {
         };
 
         return (
-            <Col xs="3">
-                <Card key={card.id} className="customCard">
+            <Col key={card.id}>
+                <Card className="customCard mb-4">
                     <CardImg top src={card.image} alt={card.name} />
                     <CardBody>
                         <CardTitle tag="h3">{card.name}</CardTitle>
@@ -30,6 +30,13 @@ function Services() {
         )
     }
 
+    // const RenderCard = ({ match }) => {
+    //     return (
+    //         <CardPage
+
+    //         />
+    //     );
+    // };
 
     return (
         <div>

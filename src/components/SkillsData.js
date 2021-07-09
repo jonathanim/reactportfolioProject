@@ -72,7 +72,7 @@ export const SKILLSDATA = [
         image: "../assets/icons8-bootstrap-50.png"
     },
     {
-        id: 6,
+        id: 12,
         name: "mySQL",
         description: "MySQL is an open-source relational database management system. SQL is a language programmers use to create, modify and extract data from the relational database, as well as control user access to the database.",
         image: "../assets/icons8-mysql-50.png"

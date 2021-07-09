@@ -27,7 +27,7 @@ const MyNavbar = (props) => {
                 <Collapse isOpen={isOpen} navbar>
                     <Nav className="mx-auto" navbar>
                         <NavItem>
-                            <NavLink className="text-link" to="/" active>
+                            <NavLink className="text-link" to="/">
                                 Home
                             </NavLink>
                         </NavItem>
