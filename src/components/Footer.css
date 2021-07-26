@@ -1,5 +1,5 @@
 .footer-site {
-  border-top: 5px solid black;
+  border-top: 2px solid black;
   left: 0;
   right: 0;
   bottom: 0;
@@ -8,7 +8,25 @@
   text-align: center;
   margin-top: 100px;
   padding-top: 50px;
+  margin-bottom: 50px;
 }
 
+.footer-link {
+  display: flex;
+  margin: auto;
+  padding-left: 100px;
+  align-items: center;
+  font-size: 20px;
+  text-decoration: none;
+  color: #fe4164;
+}
+
+.footer-link:hover {
+  color:#fe4164
+}
+
+i {
+  margin-right: 10px;
+}
 
 

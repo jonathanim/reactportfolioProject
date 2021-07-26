@@ -9,7 +9,7 @@ import { Fade } from 'react-animation-components'
 function BodyComponent() {
     return (
         <Fade in>
-            <Container >
+            <Container>
                 <Row>
                     <Col>
                         <div className="home-header">

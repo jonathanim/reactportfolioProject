@@ -9,33 +9,32 @@ function Footer() {
       <Row>
         <Col sm="4">
           <h4>Links</h4>
-          <ul className="list-unstyled">
-            <li>
+          <Link className=" footer-link" to="/">
 
-              <Link className="text-link" to="/">
-                <i className="fa fa-home" />
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link className="text-link" to="/services">
-                <i className="fa fa-cogs" />
-                Services
-              </Link>
-            </li>
-            <li>
-              <Link className="text-link" to="/projects">
-                <i className="fa fa-folder" />
-                Projects
-              </Link>
-            </li>
-            <li>
-              <Link className="text-link" to="/contact">
-                <i className="fa fa-address-book" />
-                Contact Me
-              </Link>
-            </li>
-          </ul>
+            <i className="fa fa-home" />
+            Home
+
+          </Link>
+
+          <Link className="footer-link" to="/services">
+
+            <i className="fa fa-cogs" />
+            Services
+
+          </Link>
+
+
+          <Link className="footer-link" to="/projects">
+
+            <i className="fa fa-folder" />
+            Projects
+          </Link>
+
+          <Link className="footer-link" to="/contact">
+
+            <i className="fa fa-address-book" />
+            Contact Me
+          </Link>
         </Col>
         <Col sm="4">
           <h4>Socials</h4>
@@ -49,22 +48,22 @@ function Footer() {
           <h4>Info</h4>
           <a
             role="button"
-            className="btn btn-link"
+            className="footer-link"
             href="mailto:notreal@notreal.co"
           >
-            <i className="fa fa-envelope-o " /> ImJonathan.work@gmail.com
+            <i className="fa fa-envelope-o" />
+            ImJonathan.work@Gmail.com
           </a>
 
           <br />
           <a
             role="button"
-            className="btn btn-link text-link"
+            className="footer-link"
             href="tel:+1714-232-0818"
           >
-            <i className="fa fa-phone" /> +1714-232-0818
+            <i className="fa fa-phone" />
+            +1714-232-0818
           </a>
-
-
         </Col>
 
       </Row>

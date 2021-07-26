@@ -37,7 +37,6 @@ class Main extends Component {
                 <MyNavbar />
                 <TransitionGroup>
                     <CSSTransition classNames="card" timeout={300}>
-
                         <Switch>
                             <Route path="/services/:cardId" component={renderCard} />
                             <Route exact path="/services" component={() => <Services skills={this.state.skills} />} />
