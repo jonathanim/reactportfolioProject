@@ -1,4 +1,5 @@
 import React from 'react';
+import emailjs from 'emailjs-com'
 import {
     Container, Col, Row,
     Button,
@@ -12,27 +13,51 @@ import { Fade } from 'react-animation-components'
 
 
 class Contact extends React.Component {
-    constructor() {
-        super()
+    constructor(props) {
+        super(props)
         this.state = {
             email: "",
-            firstName: "",
-            lastName: "",
+            subject: "",
+            name: "",
             message: ""
         }
+        this.handleOnChange = this.handleOnChange.bind(this)
+        this.HandleOnSubmit = this.HandleOnSubmit.bind(this)
     }
 
-    handleOnChange = e => {
+    handleOnChange(e) {
+        e.preventDefault()
         const value = e.target.value
-        this.setState({
-            ...this.state,
-            [e.target.name]: value
-        })
+        const target = e.target.name
+        this.setState(
+            {
+                [target]: value
+            }
+        )
     }
 
-    onSubmit = (e) => {
-       
-    };
+    HandleOnSubmit(e) {
+        e.preventDefault();
+
+        emailjs.sendForm('service_9twbrfc', 'template_qqz33ps', e.target, 'user_nhGwTflhvgRhjhYBiGpvo')
+            .then((result) => {
+                console.log(result.text);
+                alert("it was submitted")
+            }, (error) => {
+                console.log(error.text);
+                alert(JSON.stringify(error))
+            });
+
+        this.setState(
+            {
+                email: "",
+                subject: "",
+                name: "",
+                message: ""
+            }
+        )
+    }
+
 
     render() {
         return (
@@ -51,11 +76,11 @@ class Contact extends React.Component {
                     <Row className="justify-content-center align-items-center">
                         <Col sm="6" >
                             <Fade in>
-                                <Form className="form" onSubmit={(e) => this.handleSubmit(e)}>
+                                <Form className="form" onSubmit={this.HandleOnSubmit}>
                                     <FormGroup>
                                         <Label for="email">Email</Label>
                                         <Input
-                                            onChange={e => this.handleOnChange(e)}
+                                            onChange={this.handleOnChange}
                                             type="email"
                                             name="email"
                                             id="email"
@@ -64,25 +89,25 @@ class Contact extends React.Component {
                                         />
                                     </FormGroup>
                                     <FormGroup>
-                                        <Label for="firstName">First Name</Label>
+                                        <Label for="name">First Name</Label>
                                         <Input
                                             type="text"
-                                            name="firstName"
-                                            id="fname"
+                                            name="name"
+                                            id="name"
                                             placeholder="First Name"
-                                            onChange={e => this.handleOnChange(e)}
-                                            value={this.state.firstName}
+                                            onChange={this.handleOnChange}
+                                            value={this.state.name}
                                         />
                                     </FormGroup>
                                     <FormGroup>
-                                        <Label for="lastName">Last Name</Label>
+                                        <Label for="subject">Subject</Label>
                                         <Input
                                             type="text"
-                                            name="lastName"
-                                            id="lname"
-                                            placeholder="Last Name"
-                                            onChange={e => this.handleOnChange(e)}
-                                            value={this.state.lastName}
+                                            name="subject"
+                                            id="subject"
+                                            placeholder="Subject"
+                                            onChange={this.handleOnChange}
+                                            value={this.state.subject}
                                         />
                                     </FormGroup>
                                     <FormGroup>
@@ -92,7 +117,7 @@ class Contact extends React.Component {
                                             name="message"
                                             id="message"
                                             placeholder="Leave a Message"
-                                            onChange={e => this.handleOnChange(e)}
+                                            onChange={this.handleOnChange}
                                             value={this.state.message}
                                         />
                                     </FormGroup>
