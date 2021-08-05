@@ -4,6 +4,11 @@ import "../index.css"
 import Typewriter from 'typewriter-effect';
 import { Link } from 'react-router-dom';
 import { Fade } from 'react-animation-components'
+import About from './About'
+import Projects from "./Projects";
+import Contact from "./Contact";
+import Services from "./Services";
+
 
 
 function BodyComponent() {
@@ -40,6 +45,11 @@ function BodyComponent() {
                     </Col>
                 </Row>
             </Container>
+            <About />
+            <Services />
+            <Projects />
+            <Contact />
+
         </Fade>
     );
 }

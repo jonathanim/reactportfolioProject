@@ -3,13 +3,11 @@ import {
     Collapse,
     Navbar,
     NavbarToggler,
-    NavbarBrand,
     Nav,
     NavItem,
 } from "reactstrap";
 import { NavLink } from "react-router-dom";
 import "./Navbar.css";
-import "./customComponents/MyNavLink"
 
 const MyNavbar = (props) => {
     const [isOpen, setIsOpen] = useState(false);
@@ -19,17 +17,18 @@ const MyNavbar = (props) => {
     return (
         <>
             <Navbar fixed="top" dark expand="sm" className="customNB">
-                <NavbarBrand href="/" >
-                    <div className="logoPadding glow-on-hover">
-                        Jonathan Im
-                    </div>
-                </NavbarBrand>
                 <NavbarToggler onClick={toggle} />
                 <Collapse isOpen={isOpen} navbar>
-                    <Nav className="mx-auto" navbar>
+                    <Nav className="mx-auto my-auto" navbar>
                         <NavItem>
                             <NavLink className="text-link glow-on-hover" to="/">
                                 Home
+                            </NavLink>
+                        </NavItem>
+
+                        <NavItem>
+                            <NavLink className="text-link  glow-on-hover" to="/About/">
+                                About Me
                             </NavLink>
                         </NavItem>
                         <NavItem>
@@ -37,6 +36,7 @@ const MyNavbar = (props) => {
                                 Services
                             </NavLink>
                         </NavItem>
+
                         <NavItem>
                             <NavLink className="text-link  glow-on-hover" to="/Projects/">
                                 Projects

@@ -6,8 +6,8 @@ import { Fade } from 'react-animation-components'
 
 
 
-
 function CardPage({ skill }) {
+
 
     return (
         <Container>
@@ -25,6 +25,7 @@ function CardPage({ skill }) {
                         <div className="text-center box-container">
                             {skill.description}
                         </div>
+
                     </Fade>
                 </Col>
             </Row>

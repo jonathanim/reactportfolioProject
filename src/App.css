@@ -4,4 +4,14 @@ body {
   padding:0;
 }
 
+.container {
+  margin-top: 200px;
+  margin-bottom: 100px;
 
+}
+
+.myContainer {
+  margin-top: 300px;
+  margin-bottom: 100px;
+
+}

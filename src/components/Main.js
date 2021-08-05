@@ -4,6 +4,7 @@ import BodyComponent from "./BodyComponent";
 import Footer from "./Footer";
 import Services from "./Services";
 import Projects from "./Projects";
+import About from "./About";
 import { Switch, Route, Redirect, withRouter } from "react-router-dom";
 import Contact from "./Contact";
 import CardPage from "./CardPage";
@@ -14,10 +15,9 @@ import { TransitionGroup, CSSTransition } from 'react-transition-group'
 
 class Main extends Component {
     constructor(props) {
-        super();
+        super(props)
         this.state = {
-            skills: [...SKILLSDATA],
-
+            skills: [...SKILLSDATA]
         }
     }
 
@@ -39,10 +39,11 @@ class Main extends Component {
                     <CSSTransition classNames="card" timeout={300}>
                         <Switch>
                             <Route path="/services/:cardId" component={renderCard} />
-                            <Route exact path="/services" component={() => <Services skills={this.state.skills} />} />
+                            <Route exact path="/services" component={Services} />
                             <Route exact path="/projects" component={Projects} />
                             <Route exact path="/contact" component={Contact} />
-                            <Route exact path="/" component={BodyComponent} />x
+                            <Route exact path="/About" component={About} />
+                            <Route exact path="/" component={BodyComponent} />
                             <Redirect to="/" />
                         </Switch>
                     </CSSTransition>

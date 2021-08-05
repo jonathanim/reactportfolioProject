@@ -7,9 +7,9 @@ import {
 } from 'reactstrap';
 import { Link } from 'react-router-dom';
 import { Fade } from 'react-animation-components'
+import { SKILLSDATA } from './SkillsData.js'
 
-
-function Services({ skills }) {
+function Services() {
 
     const renderCards = (card) => {
 
@@ -18,14 +18,13 @@ function Services({ skills }) {
         };
 
         return (
-            <Col key={card.id}>
-
+            <Col key={card.id} lg={3}>
                 <Fade in>
                     <Card className="customCard mb-4">
                         <CardImg top src={card.image} alt={card.name} />
                         <CardBody>
                             <CardTitle tag="h3">{card.name}</CardTitle>
-                            <CardText>{truncate(card.description, 50)}</CardText>
+                            <CardText>{truncate(card.description, 30)}</CardText>
                             <Link to={`/services/${card.id}`} className="btn btn-dark">Display More Info</Link>
                         </CardBody>
                     </Card >
@@ -34,14 +33,6 @@ function Services({ skills }) {
             </Col >
         )
     }
-
-    // const RenderCard = ({ match }) => {
-    //     return (
-    //         <CardPage
-
-    //         />
-    //     );
-    // };
 
     return (
         <div>
@@ -56,7 +47,7 @@ function Services({ skills }) {
                     </Col>
                 </Row>
                 <Row>
-                    {skills.map(renderCards)}
+                    {SKILLSDATA.map(renderCards)}
                 </Row>
             </Container>
         </div >
