@@ -7,7 +7,7 @@ import {
 } from 'reactstrap';
 import { Link } from 'react-router-dom';
 import { Fade } from 'react-animation-components'
-import { SKILLSDATA } from './SkillsData.js'
+import { SKILLSDATA } from './data'
 
 function Services() {
 

@@ -1,3 +1,24 @@
+export const DATA = [
+    { type: "HTML", level: 95 },
+    { type: "CSS SCSS SASS", level: 95 },
+    { type: "JavaScript", level: 85 },
+    { type: "jQuery", level: 95 },
+    { type: "BootStrap, Reactstrap, Material-Ui", level: 90 },
+    { type: "React.js", level: 80 },
+    { type: "React Native", level: 80 },
+    { type: "Redux", level: 70 },
+    { type: "PHP", level: 40 },
+    { type: "Ruby", level: 90 },
+    { type: "Ruby On rails ", level: 85 },
+    { type: "SQL", level: 80 },
+    { type: "NPM", level: 95 },
+    { type: "GIT GITHUB", level: 96 },
+    { type: "FIGMA", level: 40 },
+    { type: "EXPO", level: 70 },
+];
+
+
+
 
 
 

@@ -6,8 +6,16 @@ function About() {
     return (
         <Container className="myContainer">
             <Row>
+                <Col>
+                    <div className="home-header">
+                        <h2 className="">
+                            ABOUT ME
+                        </h2>
+                    </div>
+                </Col>
+            </Row>
+            <Row>
                 <Col style={{ justifyContent: 'center', alignContent: 'center' }}>
-
                     <div style={styles.text}>
                         <img style={styles.image} src="../assets/favpng_html-responsive-web-design-web-development-software-developer-mobile-app-development.png" alt="boy" />
                         <p className="my-4">I am a Front End Developer, located in Orange County, CA.</p>

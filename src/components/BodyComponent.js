@@ -8,7 +8,7 @@ import About from './About'
 import Projects from "./Projects";
 import Contact from "./Contact";
 import Services from "./Services";
-
+import SkillBars from "./SkillsBars";
 
 
 function BodyComponent() {
@@ -46,9 +46,11 @@ function BodyComponent() {
                 </Row>
             </Container>
             <About />
+            <SkillBars />   
             <Services />
             <Projects />
             <Contact />
+
 
         </Fade>
     );

@@ -8,7 +8,7 @@ import About from "./About";
 import { Switch, Route, Redirect, withRouter } from "react-router-dom";
 import Contact from "./Contact";
 import CardPage from "./CardPage";
-import { SKILLSDATA } from "./SkillsData";
+import { SKILLSDATA } from "./data";
 import { TransitionGroup, CSSTransition } from 'react-transition-group'
 
 
