@@ -1,3 +1,33 @@
+body, html {
+  font-family: Montserrat;
+  margin: 0;
+  padding:0;
+  height: 100%
+}
+
+/* my colors  */
+/* {rgb(209, 0, 104)} */
+
+.h1-title {
+  font-size: 50px;
+  text-align: center;
+  margin: -20px 0 100px 0;
+  text-shadow: 2px 2px black;
+}
+.section {
+  width:auto;
+  margin-top: 200px;
+  margin-bottom: 200px;
+}
+.margin-right{
+  margin-right:15px;
+  padding-bottom: 15px;
+  justify-content: center;
+  align-content: center;
+}
+
+
+
 .home-header {
     padding: 150px 30px 100px 30px;
     display: grid;
@@ -11,11 +41,12 @@
     font-weight: bold;
 }
 
-.home-header h2 { 
+.home-header { 
     font-size: 25px;
     font-weight: none;
    text-align:center;
 }
+
 
 
 .customCard {

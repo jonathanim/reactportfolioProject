@@ -7,7 +7,7 @@ import {
     NavItem,
 } from "reactstrap";
 import { NavLink } from "react-router-dom";
-import "./Navbar.css";
+import "./styles/Navbar.css";
 
 const MyNavbar = (props) => {
     const [isOpen, setIsOpen] = useState(false);

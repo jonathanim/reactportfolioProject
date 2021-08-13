@@ -1,6 +1,7 @@
 import React from 'react'
 import { Container, Row, Col } from "reactstrap";
 import '../index.css';
+
 import {
     Card, CardImg, CardText, CardBody,
     CardTitle
@@ -35,22 +36,20 @@ function Services() {
     }
 
     return (
-        <div>
-            <Container >
-                <Row>
-                    <Col>
-                        <div className="home-header">
-                            <h2 className="">
-                                Services And Technologies
-                            </h2>
-                        </div>
-                    </Col>
-                </Row>
-                <Row>
-                    {SKILLSDATA.map(renderCards)}
-                </Row>
-            </Container>
-        </div >
+
+        <Container className="section" >
+            <Row>
+                <Col>
+
+                    <h3 className="h3-title">    <span style={{ color: 'rgb(209, 0, 104)' }}>ME</span></h3>
+
+                </Col>
+            </Row>
+            <Row>
+                {SKILLSDATA.map(renderCards)}
+            </Row>
+        </Container>
+
     )
 }
 
