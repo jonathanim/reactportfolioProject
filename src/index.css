@@ -1,8 +1,9 @@
-body, html {
+body,
+html {
   font-family: Montserrat;
   margin: 0;
-  padding:0;
-  height: 100%
+  padding: 0;
+  height: 100%;
 }
 
 /* my colors  */
@@ -12,88 +13,79 @@ body, html {
   font-size: 50px;
   text-align: center;
   margin: -20px 0 100px 0;
-  text-shadow: 2px 2px black;
 }
+
 .section {
-  width:auto;
+  width: auto;
   margin-top: 200px;
   margin-bottom: 200px;
 }
-.margin-right{
-  margin-right:15px;
+.margin-right {
+  margin-right: 15px;
   padding-bottom: 15px;
   justify-content: center;
   align-content: center;
 }
 
-
-
 .home-header {
-    padding: 150px 30px 100px 30px;
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    text-align:center;
-;
+  padding: 150px 30px 100px 30px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .home-header h1 {
-    font-weight: bold;
+  font-weight: bold;
 }
 
-.home-header { 
-    font-size: 25px;
-    font-weight: none;
-   text-align:center;
+.home-header {
+  font-size: 25px;
+  font-weight: none;
+  text-align: center;
 }
-
-
 
 .customCard {
-    padding: 15px;
-    border: 10px solid gray;
-    border-radius: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-
+  padding: 15px;
+  border: 10px solid gray;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
-
-.customCard img{
-    width: 50%;
-    border: 2px solid black;
-    border-radius: 15px;
-    padding: 10px;
+.customCard img {
+  width: 50%;
+  border: 2px solid black;
+  border-radius: 15px;
+  padding: 10px;
 }
 
 .box-container {
-    margin: auto;
-    padding: 10px 10px;
-    width: 400px;
-    height: auto;
-    font-size: 20px;    
+  margin: auto;
+  padding: 10px 10px;
+  width: 400px;
+  height: auto;
+  font-size: 20px;
 }
 
-
-
 .card-enter {
-    opacity: 0;
-    transform: translateX(-100%);
-  }
-  
-  .card-enter-active {
-    opacity: 1;
-    transform: translateX(0%);
-    transition: 300ms ease-out;
-  }
-  
-  .card-exit {
-    opacity: 1;
-  }
-  
-  .card-exit-active {
-    opacity: 0;
-    transition: 300ms ease-in;
-  }
+  opacity: 0;
+  transform: translateX(-100%);
+}
+
+.card-enter-active {
+  opacity: 1;
+  transform: translateX(0%);
+  transition: 300ms ease-out;
+}
+
+.card-exit {
+  opacity: 1;
+}
+
+.card-exit-active {
+  opacity: 0;
+  transition: 300ms ease-in;
+}
