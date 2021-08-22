@@ -1,0 +1,18 @@
+.bgBack {
+  height: 100%;
+  max-width: auto;
+  background-color: hsla(0, 0%, 0%, 0.4);
+  background-image: url("./bgsky2.jpg.jpg");
+
+  background-repeat: repeat-x;
+
+  background-size: 2500px, 800px, 500px 200px, 1000px, 400px 260px;
+  animation: 2000s para infinite linear;
+}
+
+@keyframes para {
+  100% {
+    background-position: -9000px 20%, -800px 95%, 500px 50%, 1000px 100%,
+      400px 0;
+  }
+}
