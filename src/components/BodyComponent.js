@@ -5,12 +5,14 @@ import About from "./About";
 import Projects from "./Projects";
 import Contact from "./Contact";
 import Footer from "./Footer";
+import Service from "./Service";
 
 function BodyComponent() {
   return (
     <Fade in>
       <Intro />
       <About />
+      <Service />
       <Projects />
       <Contact />
       <Footer />

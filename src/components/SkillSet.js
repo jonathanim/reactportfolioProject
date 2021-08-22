@@ -4,7 +4,7 @@ import { Col } from "reactstrap";
 
 function SkillSet() {
   return (
-    <Col>
+    <Col xs={12} sm={6}>
       <PieChart
         label={(props) => {
           return props.dataEntry.title;

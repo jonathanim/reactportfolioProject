@@ -5,13 +5,14 @@ import SkillBars from "./SkillsBars";
 import "../index.css";
 import "./styles/About.css";
 import SkillSet from "./SkillSet";
+
 function About() {
   return (
     <Container className="section">
       <Row xs="12">
         <Col className={styles.columnStyle}>
           <h1 className="h1-title">
-            ABOUT <span style={{ color: "rgb(209, 0, 104)" }}>ME</span>
+            About <span style={{ color: "rgb(209, 0, 104)" }}>Me</span>
           </h1>
         </Col>
       </Row>
@@ -51,7 +52,7 @@ function About() {
             </CardBody>
           </Card>
         </Col>
-        <Col xs={12} md={6} lg={4}>
+        <Col xs={12} md={12} lg={4}>
           <Card style={styles.text}>
             <CardImg
               top
@@ -72,16 +73,13 @@ function About() {
         </Col>
       </Row>
       <Row
-        xs="12"
         className={{
           justifyContent: "center",
           alignContent: "center",
           textAlign: "center",
         }}
       >
-        <Col style={{ marginTop: "30px" }}>
-          <SkillBars />
-        </Col>
+        <SkillBars />
         <SkillSet />
       </Row>
     </Container>
@@ -97,14 +95,15 @@ const styles = {
     padding: "30px auto",
     textAlign: "center",
     fontSize: "20px",
-    border: "3px solid rgb(209, 0, 104)",
+    border: "5px solid rgb(209, 0, 104)",
     width: "auto",
     height: "550px",
     opacity: ".97",
+    margin: "5px",
   },
   image: {
-    background: "rgb(155, 0, 154)",
-    border: "10px solid white",
+    background: "black",
+    border: "5px solid white",
     display: "block",
     margin: "30px auto",
     height: "250px",

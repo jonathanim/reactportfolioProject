@@ -20,11 +20,15 @@ class SkillBars extends React.Component {
 
   render() {
     const { collapsed } = this.state;
-    const hue = "0";
+    const hue = "rgb(209, 0, 104";
     const saturation = "100";
 
     return (
-      <Col className={`container ${collapsed ? "collapsed" : ""}`}>
+      <Col
+        xs={12}
+        sm={6}
+        className={`container ${collapsed ? "collapsed" : ""}`}
+      >
         <ul className="skills">
           {this.state.skills.map((skill, index) => (
             <li
