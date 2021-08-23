@@ -20,7 +20,7 @@ class SkillBars extends React.Component {
 
   render() {
     const { collapsed } = this.state;
-    const hue = "rgb(209, 0, 104";
+    const hue = "5";
     const saturation = "100";
 
     return (
