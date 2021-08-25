@@ -28,7 +28,7 @@ function About() {
             <CardBody>
               <CardText>
                 I am a Software Engineer, located in Orange County, CA.
-                <hr /> I specialize in Front-End development with knowledge in
+                <hr />I specialize in Front-End development with knowledge in
                 Back-end and UI.
               </CardText>
             </CardBody>
@@ -74,33 +74,31 @@ function About() {
           </Card>
         </Col>
       </Row>
-      <Row style={styles.bigCard}>
-        <Col xs={12} sm={12} md={6}>
+      <Row>
+        <Col style={styles.text2}>
+          <h3> Things I love to do</h3>
+
+          <p>I love Creating web apps.</p>
+          <p>I love helping people and showing what's possible.</p>
+          <p>I love all animals and nature.</p>
+          <p>I love Coffee and food.</p>
+        </Col>
+        <Col style={styles.text2}>
           <img
-            style={styles.bigImage}
+            style={styles.image}
             src={process.env.PUBLIC_URL + "/assets/goku.jpg"}
-            alt="Goku"
+            alt="goku"
           />
         </Col>
-        <Col style={styles.text2} xs={12} sm={12} md={3}>
-          <h3> Things I love to do</h3>
-          <ul>
-            <p>I love Creating web apps.</p>
-            <p>I love helping people and showing what's possible.</p>
-            <p>I love all animals and nature.</p>
-            <p>I love Coffee and food.</p>
-          </ul>
-        </Col>
-        <Col style={styles.text2} xs={12} sm={12} md={3}>
+        <Col style={styles.text2}>
           <h3> Fun Facts</h3>
-          <ul>
-            <p>Originally from Buenos Aires, Argentina</p>
-            <p>
-              On my free time I love doing extreme sports, snowboarding,
-              mountain biking and riding motorcycles
-            </p>
-            <p>I started my programming pfe since 2019 .</p>
-          </ul>
+
+          <p>Originally from Buenos Aires, Argentina</p>
+          <p>
+            On my free time I love doing extreme sports, snowboarding, mountain
+            biking and riding motorcycles
+          </p>
+          <p>I started my programming pfe since 2019 .</p>
         </Col>
       </Row>
     </Container>
@@ -122,6 +120,15 @@ const styles = {
     opacity: ".97",
     margin: "5px",
   },
+  text2: {
+    backgroundColor: "black",
+    color: "white",
+    fontSize: "20px",
+    border: "5px solid #26538d",
+    textAlign: "center",
+    padding: "20px",
+    margin: "10px 10px",
+  },
   image: {
     background: "gray",
     border: "5px solid #26538d",
@@ -129,29 +136,6 @@ const styles = {
     margin: "30px auto",
     height: "300px",
     width: "300px",
-  },
-  bigCard: {
-    backgroundColor: "black",
-    color: "white",
-    padding: "30px auto",
-    textAlign: "center",
-    fontSize: "20px",
-    border: "5px solid #26538d",
-    width: "auto",
-    opacity: ".97",
-  },
-  bigImage: {
-    border: "5px solid #26538d",
-    display: "block",
-    margin: "30px auto",
-    height: "300px",
-    width: "300px",
-  },
-  text2: {
-    margin: "30px auto",
-    justifyContent: "center",
-    alignItems: "center",
-    textAlign: "center",
   },
 
   columnStyle: {
