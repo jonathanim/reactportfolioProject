@@ -6,18 +6,11 @@ import Projects from "./Projects";
 import About from "./About";
 import { Switch, Route, Redirect, withRouter } from "react-router-dom";
 import Contact from "./Contact";
-import { SKILLSDATA } from "./data";
+
 import { TransitionGroup, CSSTransition } from "react-transition-group";
 import ScrollTop from "./ScrollTop";
 
 class Main extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      skills: [...SKILLSDATA],
-    };
-  }
-
   render() {
     return (
       <>

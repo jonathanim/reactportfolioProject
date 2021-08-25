@@ -70,9 +70,7 @@ class Contact extends React.Component {
       <Container className="section">
         <Row>
           <Col>
-            <h1 className="h1-title" style={{ color: "black" }}>
-              Contact Me
-            </h1>
+            <h1 className="h1-title">Contact Me</h1>
           </Col>
         </Row>
         <Row className="justify-content-center align-items-center">

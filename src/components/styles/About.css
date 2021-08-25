@@ -1,18 +1,11 @@
-
-
 .svgBackground {
-    position: relative;
-    z-index: -1;
-    margin-top:-25%;
+  position: relative;
+  z-index: -1;
+  margin-top: -25%;
 }
-
-
 
 .center-content {
-
-text-align: center;
-align-items: center;
-justify-content: center;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
 }
-
-

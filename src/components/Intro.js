@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Container, Row, Col } from "reactstrap";
 import "../index.css";
 import Typewriter from "typewriter-effect";
@@ -13,6 +13,8 @@ function Intro() {
   const thirdString =
     '<strong><span style="color: white; text-shadow: 2px 2px black">Welcome to my</span> <span style="color: rgb(209, 0, 104); text-shadow: 2px 2px black">Website</span></strong>';
 
+  const [opacity, setOpacity] = useState(0.9);
+
   return (
     <Container fluid>
       <Row>
@@ -21,7 +23,7 @@ function Intro() {
           style={{
             height: "100vh",
             width: "100vw",
-            borderBottom: "3px solid black",
+            borderBottom: "3px solid #26538d",
           }}
         >
           <div className="home-header mt-5">
@@ -41,7 +43,7 @@ function Intro() {
               style={{
                 fontSize: "70px",
                 color: "white",
-                textShadow: "3px 2px black",
+                textShadow: "3px 2px #26538d",
               }}
             >
               Creating Brands, <br />
@@ -56,9 +58,17 @@ function Intro() {
               className="btn btn-light p-4"
               block
               style={{
-                borderColor: "black",
-                borderWidth: "3px",
-                borderRadius: "10px",
+                borderColor: "#26538d",
+                borderWidth: "4px",
+                borderRadius: "15px",
+                fontSize: " 25px",
+                opacity: opacity,
+              }}
+              onMouseEnter={() => {
+                setOpacity(1);
+              }}
+              onMouseLeave={() => {
+                setOpacity(0.9);
               }}
             >
               Lets Get in Touch

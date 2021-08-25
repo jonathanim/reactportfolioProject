@@ -1,7 +1,4 @@
 {
-    "cSpell.words": [
-        "browserslist",
-        "unstyled",
-        "youtube"
-    ]
+  "cSpell.words": ["browserslist", "unstyled", "youtube"],
+  "cSpell.ignoreWords": ["goku"]
 }

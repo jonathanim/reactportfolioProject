@@ -10,9 +10,10 @@ html {
 /* {rgb(209, 0, 104)} */
 
 .h1-title {
-  font-size: 50px;
+  font-size: 70px;
   text-align: center;
   margin: -20px 0 100px 0;
+  color: #26538d;
 }
 
 .section {

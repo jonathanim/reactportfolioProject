@@ -25,10 +25,12 @@ export default CustomCard;
 
 const styles = {
   outCard: {
+    backgroundColor: "black",
+    color: "white",
     width: "250px",
     height: "310px",
     borderWidth: "3px",
-    borderColor: "rgb(209, 0, 104)",
+    borderColor: "#26538d",
     borderStyle: "solid",
     position: "relative",
     bottom: "50px",

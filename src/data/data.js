@@ -1,17 +1,12 @@
 export const DATA = [
-  { type: "HTML", level: 90 },
-  { type: "CSS SCSS SASS", level: 90 },
+  { type: "HTML CSS", level: 90 },
   { type: "JavaScript", level: 85 },
-  { type: "jQuery", level: 87 },
-  { type: "BootStrap, Reactstrap, Material-Ui", level: 90 },
+  { type: "BootStrap Reactstrap Material-Ui", level: 90 },
   { type: "React.js", level: 85 },
   { type: "React Native", level: 80 },
   { type: "Redux", level: 70 },
-  { type: "PHP", level: 40 },
   { type: "Ruby", level: 60 },
-  { type: "Ruby On rails ", level: 70 },
-  { type: "SQL", level: 80 },
-  { type: "NPM", level: 85 },
+  { type: "Ruby on Rails ", level: 70 },
   { type: "GIT GITHUB", level: 90 },
   { type: "FIGMA", level: 40 },
   { type: "EXPO", level: 70 },
@@ -60,9 +55,9 @@ export const SKILLSDATA = [
   },
   {
     id: 7,
-    name: "Node",
+    name: "Node.js",
     description:
-      "Node. js (Node) is an open source development platform for executing JavaScript code server-side. Node is useful for developing applications that require a persistent connection from the browser to the server and is often used for real-time applications such as chat, news feeds and web push notifications.",
+      "Node.js (Node) is an open source development platform for executing JavaScript code server-side. Node is useful for developing applications that require a persistent connection from the browser to the server and is often used for real-time applications such as chat, news feeds and web push notifications.",
     image: "../assets/icons8-nodejs-50.png",
   },
   {

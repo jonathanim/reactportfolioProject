@@ -1,7 +1,7 @@
 import React from "react";
 import "./styles/skillsbars.scss";
 import "../index.css";
-import { DATA } from "./data";
+import { DATA } from "../data/data";
 import { Col } from "reactstrap";
 class SkillBars extends React.Component {
   constructor(props) {
@@ -25,10 +25,17 @@ class SkillBars extends React.Component {
 
     return (
       <Col
-        xs={12}
         sm={6}
+        style={{
+          backgroundColor: "black",
+          padding: "30px",
+          margin: "20px auto",
+        }}
         className={`container ${collapsed ? "collapsed" : ""}`}
       >
+        <h2 style={{ color: "white", textAlign: "center", fontSize: "60px" }}>
+          Technologies
+        </h2>
         <ul className="skills">
           {this.state.skills.map((skill, index) => (
             <li

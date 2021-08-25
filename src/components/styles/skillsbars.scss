@@ -2,14 +2,14 @@
   margin: 30px 0 30px 0;
   padding: 0;
   width: calc(100% - 10px);
+
   li {
     display: block;
     position: relative;
-    background-color: rgb(209, 0, 104);
     color: #fff;
     margin: 10px 0;
-    border: 3px double black;
-    transition: width 2s ease-in-out;
+    border: 3px double white;
+    transition: width 2s ease-in;
     .collapsed & {
       width: 0 !important;
     }
