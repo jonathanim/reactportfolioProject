@@ -75,13 +75,15 @@ function About() {
         </Col>
       </Row>
       <Row>
-        <Col style={styles.text2}>
-          <h3> Things I love to do</h3>
+        <Col style={styles.text2} className="d-flex align-items-center">
+          <div className="align-content-center">
+            <h3> Things I love to do</h3>
+            <p>I love Creating web apps.</p>
+            <p>I love helping people and showing what's possible.</p>
+            <p>I love all animals and nature.</p>
+            <p>I love Coffee and food.</p>
+          </div>
 
-          <p>I love Creating web apps.</p>
-          <p>I love helping people and showing what's possible.</p>
-          <p>I love all animals and nature.</p>
-          <p>I love Coffee and food.</p>
         </Col>
         <Col style={styles.text2}>
           <img
@@ -90,18 +92,21 @@ function About() {
             alt="goku"
           />
         </Col>
-        <Col style={styles.text2}>
-          <h3> Fun Facts</h3>
+        <Col style={styles.text2} className="d-flex align-items-center">
+          <div className="align-content-center">
+            <h3> Fun Facts</h3>
 
-          <p>Originally from Buenos Aires, Argentina</p>
-          <p>
-            On my free time I love doing extreme sports, snowboarding, mountain
-            biking and riding motorcycles
-          </p>
-          <p>I started my programming pfe since 2019 .</p>
+            <p>Originally from Buenos Aires, Argentina</p>
+            <p>
+              On my free time I love doing extreme sports, snowboarding, mountain
+              biking and riding motorcycles
+            </p>
+            <p>My lifestyle as a programmer started in 2019.</p>
+
+          </div>
         </Col>
       </Row>
-    </Container>
+    </Container >
   );
 }
 
