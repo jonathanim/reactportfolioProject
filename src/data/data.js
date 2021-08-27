@@ -96,3 +96,33 @@ export const SKILLSDATA = [
     image: "../assets/icons8-mysql-50.png",
   },
 ];
+
+
+
+export const PROJECTS = [
+
+  {
+    name: "Coffee Shop",
+    url: "https://amazing-bhabha-273d94.netlify.app/",
+    image: "/assets/CoffeeShop.png",
+    description: "Static Website for Coffee Shop",
+    tools: "HTML and Bootstrap"
+
+  },
+  {
+    name: "Coffee Shop",
+    url: "https://amazing-bhabha-273d94.netlify.app/",
+    image: "/assets/CoffeeShop.png",
+    description: "Static Website for Coffee Shop",
+    tools: "HTML and Bootstrap"
+
+  },
+  {
+    name: "Coffee Shop",
+    url: "https://amazing-bhabha-273d94.netlify.app/",
+    image: "/assets/CoffeeShop.png",
+    description: "Static Website for Coffee Shop",
+    tools: "HTML and Bootstrap"
+
+  }
+]
