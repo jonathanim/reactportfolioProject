@@ -14,7 +14,7 @@ function Service() {
     <Container className="section">
       <Row>
         <Col className={styles.columnStyle}>
-          <h1 className="h1-title">Service</h1>
+          <h1 className="h1-title" id="Services">Service</h1>
         </Col>
       </Row>
       <Row style={styles.background3}>

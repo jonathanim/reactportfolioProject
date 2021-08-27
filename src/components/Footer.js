@@ -5,74 +5,100 @@ import { Link } from "react-router-dom";
 
 function Footer() {
   return (
-    <Container className="footer-site">
-      <Row>
-        <Col sm="4">
-          <h4>Links</h4>
-          <Link className=" footer-link" to="/">
-            <i className="fa fa-home" />
-            Home
-          </Link>
+    <Container fluid className="footer-site">
+      <Row >
+        <Col className="d-flex align-items-center justify-content-center">
 
-          <Link className="footer-link" to="/services">
-            <i className="fa fa-cogs" />
-            Services
-          </Link>
+          <div className="justify-content-center align-items-center">
+            <h4>Links</h4>
+            <a
+              className="footer-links"
+              href="#Home"
+            >
+              <i className="fa fa-home" />
+              Home
+            </a>
 
-          <Link className="footer-link" to="/projects">
-            <i className="fa fa-folder" />
-            Projects
-          </Link>
+            <a
+              className="footer-links"
+              href="#About"
+            >
+              <i className="fa fa-address-book" />
+              About
+            </a>
 
-          <Link className="footer-link" to="/contact">
-            <i className="fa fa-address-book" />
-            Contact Me
-          </Link>
-        </Col>
-        <Col sm="4">
-          <h4>Socials</h4>
-          <a
-            className="btn btn-social-icon btn-instagram"
-            href="http://instagram.com/"
-          >
-            <i className="fa fa-instagram" />
-          </a>{" "}
-          <a
-            className="btn btn-social-icon btn-facebook"
-            href="http://www.facebook.com/"
-          >
-            <i className="fa fa-facebook" />
-          </a>{" "}
-          <a
-            className="btn btn-social-icon btn-twitter"
-            href="http://twitter.com/"
-          >
-            <i className="fa fa-twitter" />
-          </a>{" "}
-          <a
-            className="btn btn-social-icon btn-google"
-            href="http://youtube.com/"
-          >
-            <i className="fa fa-youtube" />
-          </a>
+            <a
+              className="footer-links"
+              href="#Services"
+            >
+              <i className="fa fa-cogs" />
+              Services
+            </a>
+
+            <a
+              className="footer-links"
+              href="#Projects"
+            >
+              <i className="fa fa-folder" />
+              Projects
+            </a>
+            <a
+              className="footer-links"
+              href="#Contact"
+            >
+              <i className="fa-envelope" />
+              Contact me
+            </a>
+
+          </div>
+
+
         </Col>
 
-        <Col sm="4">
-          <h4>Info</h4>
-          <a
-            role="button"
-            className="footer-link"
-            href="mailto:notreal@notreal.co"
-          >
-            <i className="fa fa-envelope-o" />
-            ImJonathan.work@Gmail.com
-          </a>
+        <Col className="d-flex align-items-center justify-content-center">
+          <div className="justify-content-center align-items-center">
 
-          <br />
-          <a role="button" className="footer-link" href="tel:+1714-232-0818">
-            <i className="fa fa-phone" />
-            +1714-232-0818
-          </a>
+            <h4>Info</h4>
+            <a
+              role="button"
+              className="footer-links"
+              href="mailto:notreal@notreal.co"
+            >
+              <i className="fa fa-envelope-o" />
+              ImJonathan.work@Gmail.com
+            </a>
+
+            <br />
+            <a role="button" className="footer-links" href="tel:+1714-232-0818">
+              <i className="fa fa-phone" />
+              +1714-232-0818
+            </a>
+            <br />
+            <a
+              className="btn btn-social-icon btn-instagram"
+              href="http://instagram.com/"
+            >
+              <i className="fa fa-instagram" />
+            </a>{" "}
+            <a
+              className="btn btn-social-icon btn-facebook"
+              href="http://www.facebook.com/"
+            >
+              <i className="fa fa-facebook" />
+            </a>{" "}
+            <a
+              className="btn btn-social-icon btn-twitter"
+              href="http://twitter.com/"
+            >
+              <i className="fa fa-twitter" />
+            </a>{" "}
+            <a
+              className="btn btn-social-icon btn-google"
+              href="http://youtube.com/"
+            >
+              <i className="fa fa-youtube" />
+            </a>
+          </div>
         </Col>
       </Row>
     </Container>

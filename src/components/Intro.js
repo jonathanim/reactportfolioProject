@@ -19,6 +19,7 @@ function Intro() {
     <Container fluid>
       <Row>
         <Col
+          id="Home"
           className="bgBack"
           style={{
             height: "100vh",
