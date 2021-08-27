@@ -110,19 +110,19 @@ export const PROJECTS = [
 
   },
   {
-    name: "Coffee Shop",
-    url: "https://amazing-bhabha-273d94.netlify.app/",
-    image: "/assets/CoffeeShop.png",
-    description: "Static Website for Coffee Shop",
-    tools: "HTML and Bootstrap"
+    name: "Coming Soon",
+    url: "/",
+    image: "/assets/comingSoon.jpg",
+    description: "coming soon",
+    tools: "more to come"
 
   },
   {
-    name: "Coffee Shop",
-    url: "https://amazing-bhabha-273d94.netlify.app/",
-    image: "/assets/CoffeeShop.png",
-    description: "Static Website for Coffee Shop",
-    tools: "HTML and Bootstrap"
+    name: "Coming Soon",
+    url: "/",
+    image: "/assets/comingSoon.jpg",
+    description: "coming soon",
+    tools: "more to come"
 
   }
 ]

@@ -29,16 +29,20 @@ function Projects() {
       <Row>
 
         {data.map((project, index) => {
+          let show;
+          project.url === "/" ? show = "none" : show = "block"
+
           return (
             <Col key={index} lg="4" >
               <Fade in>
                 <Card >
-                  <CardImg top width="100%" src={process.env.PUBLIC_URL + ` ${project.image}`} alt={project.name} />
+                  <CardImg top width="auto" height="200px" src={process.env.PUBLIC_URL + ` ${project.image}`} alt={project.name} />
                   <CardBody className="text-center mt-1">
                     <CardTitle tag="h5">{project.name}</CardTitle>
                     <CardSubtitle tag="h6" className="mb-2 text-muted">{project.tools}</CardSubtitle>
                     <CardText>{project.description}</CardText>
-                    <Link to={{ pathname: `${project.url}` }} target="_blank" >View</Link>
+
+                    <Link style={{ display: `${show}` }} to={{ pathname: `${project.url}` }} target="_blank" >View</Link>
                   </CardBody>
                 </Card>
               </Fade>
