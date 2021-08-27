@@ -23,7 +23,7 @@ function Projects() {
     <Container className="section">
       <Row>
         <Col>
-          <h1 className="h1-title"> Projects</h1>
+          <h1 className="h1-title" id="Projects"> Projects</h1>
         </Col>
       </Row>
       <Row>

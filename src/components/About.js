@@ -7,10 +7,10 @@ import "./styles/About.css";
 
 function About() {
   return (
-    <Container className="section">
+    <Container className="section" id="AboutScroll" >
       <Row>
         <Col className={styles.columnStyle} xs="12">
-          <h1 className="h1-title">About Me</h1>
+          <h1 className="h1-title" >About Me</h1>
         </Col>
       </Row>
 

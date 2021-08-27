@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "reactstrap";
 import "./styles/Footer.css";
-import { Link } from "react-router-dom";
+
 
 function Footer() {
   return (
@@ -21,7 +21,7 @@ function Footer() {
 
             <a
               className="footer-links"
-              href="#About"
+              href="#AboutScroll"
             >
               <i className="fa fa-address-book" />
               About
@@ -62,7 +62,7 @@ function Footer() {
             <a
               role="button"
               className="footer-links"
-              href="mailto:notreal@notreal.co"
+              href="mailto:imjonathan.work@gmail.com"
             >
               <i className="fa fa-envelope-o" />
               ImJonathan.work@Gmail.com
