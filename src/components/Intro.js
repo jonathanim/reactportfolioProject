@@ -13,7 +13,8 @@ function Intro() {
   const thirdString =
     '<strong><span style="color: white; text-shadow: 2px 2px black">Welcome to my</span> <span style="color: rgb(209, 0, 104); text-shadow: 2px 2px black">Website</span></strong>';
 
-  const [opacity, setOpacity] = useState(0.9);
+  const [opacity, setOpacity] = useState(0.5);
+  const [transition, setTransition] = useState("2s");
 
   return (
     <Container fluid>
@@ -64,12 +65,15 @@ function Intro() {
                 borderRadius: "15px",
                 fontSize: " 25px",
                 opacity: opacity,
+                transition: transition,
               }}
               onMouseEnter={() => {
                 setOpacity(1);
+                setTransition("1s");
               }}
               onMouseLeave={() => {
-                setOpacity(0.9);
+                setOpacity(0.2);
+                setTransition("5s");
               }}
             >
               Lets Get in Touch

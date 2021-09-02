@@ -2,62 +2,41 @@ import React from "react";
 import { Container, Row, Col } from "reactstrap";
 import "./styles/Footer.css";
 
-
 function Footer() {
   return (
     <Container fluid className="footer-site">
-      <Row >
+      <Row>
         <Col className="d-flex align-items-center justify-content-center">
-
           <div className="justify-content-center align-items-center">
             <h4>Links</h4>
-            <a
-              className="footer-links"
-              href="#Home"
-            >
+            <a className="footer-links" href="#Home">
               <i className="fa fa-home" />
               Home
             </a>
 
-            <a
-              className="footer-links"
-              href="#AboutScroll"
-            >
+            <a className="footer-links" href="#AboutScroll">
               <i className="fa fa-address-book" />
               About
             </a>
 
-            <a
-              className="footer-links"
-              href="#Services"
-            >
+            <a className="footer-links" href="#Services">
               <i className="fa fa-cogs" />
               Services
             </a>
 
-            <a
-              className="footer-links"
-              href="#Projects"
-            >
+            <a className="footer-links" href="#Projects">
               <i className="fa fa-folder" />
               Projects
             </a>
-            <a
-              className="footer-links"
-              href="#Contact"
-            >
-              <i className="fa-envelope" />
+            <a className="footer-links" href="#Contact">
+              <i className="fa fa-envelope" />
               Contact me
             </a>
-
           </div>
-
-
         </Col>
 
         <Col className="d-flex align-items-center justify-content-center">
           <div className="justify-content-center align-items-center">
-
             <h4>Info</h4>
             <a
               role="button"
@@ -67,7 +46,6 @@ function Footer() {
               <i className="fa fa-envelope-o" />
               ImJonathan.work@Gmail.com
             </a>
-
             <br />
             <a role="button" className="footer-links" href="tel:+1714-232-0818">
               <i className="fa fa-phone" />
