@@ -97,32 +97,26 @@ export const SKILLSDATA = [
   },
 ];
 
-
-
 export const PROJECTS = [
-
   {
     name: "Coffee Shop",
-    url: "https://amazing-bhabha-273d94.netlify.app/",
+    url: "https://coffeeshop-gg.netlify.app/",
     image: "/assets/CoffeeShop.png",
     description: "Static Website for Coffee Shop",
-    tools: "HTML and Bootstrap"
-
+    tools: "HTML and Bootstrap",
+  },
+  {
+    name: "Peronal Portfolio",
+    url: "https://jonathan-im.netlify.app/",
+    image: "/assets/comingSoon.jpg",
+    description: "React personal porfolio",
+    tools: "React, EmailJS, Reactstrap",
   },
   {
     name: "Coming Soon",
     url: "/",
     image: "/assets/comingSoon.jpg",
     description: "coming soon",
-    tools: "more to come"
-
+    tools: "more to come",
   },
-  {
-    name: "Coming Soon",
-    url: "/",
-    image: "/assets/comingSoon.jpg",
-    description: "coming soon",
-    tools: "more to come"
-
-  }
-]
+];
