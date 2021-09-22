@@ -108,7 +108,7 @@ export const PROJECTS = [
   {
     name: "Peronal Portfolio",
     url: "https://jonathan-im.netlify.app/",
-    image: "/assets/comingSoon.jpg",
+    image: "/assets/personalPorftolioPNG.png",
     description: "React personal porfolio",
     tools: "React, EmailJS, Reactstrap",
   },
